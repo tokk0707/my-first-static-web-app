@@ -38,7 +38,7 @@
 	position: relative;
 }
 .slide1,.slide2,.slide3 {
-	animation-duration: 15s;	/*アニメーションを実行する時間。「s」は秒の事。*/
+	animation-duration: 30s;	/*アニメーションを実行する時間。「s」は秒の事。*/
 	animation-iteration-count:infinite;
 	position: absolute;left:0px;top:0px;width: 100%;height: auto;
 	animation-fill-mode: both;	/*アニメーションの待機中は最初のキーフレームを維持、終了後は最後のキーフレームを維持。*/
