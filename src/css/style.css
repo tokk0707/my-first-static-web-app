@@ -286,7 +286,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 
 /*装飾文字の設定（共通）*/
 #contents .list::before {
-	font-size: 18vw;
+	font-size: 14vw;
 	line-height: 1;
 	position: absolute;
 	color: rgba(255,255,255,0.15);	/*文字色。255,255,255は白のことで、0.15は色が15%出た状態のこと。*/
@@ -304,15 +304,15 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 }
 /*１つ目ブロックに表示させるテキスト*/
 #contents .list:nth-of-type(1)::before {
-	content: "Works1";
+	content: "Timeup";
 }
 /*２つ目ブロックに表示させるテキスト*/
 #contents .list:nth-of-type(2)::before {
-	content: "Works2";
+	content: "Feature";
 }
 /*３つ目ブロックに表示させるテキスト*/
 #contents .list:nth-of-type(3)::before {
-	content: "Works3";
+	content: "Expectations";
 }
 
 /*ボックス内のボタン（共通）*/
@@ -343,7 +343,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 #contents .list-column {
 	display: flex;
 	flex-direction: column;			/*中のブロックを並べる向きの指定。これは縦に並べる意味。*/
-	width: 32%;						/*ブロック幅*/
+	width: 24%;						/*ブロック幅*/
 	margin-bottom: 20px;			/*ブロックの下に空ける余白*/
 	background: #000;				/*背景色*/
 	color: #fff;					/*文字色*/
