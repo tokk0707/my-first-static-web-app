@@ -271,14 +271,35 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 }
 /*ボックス内のfigure画像*/
 #contents .list figure {
-	width: 50%;		/*画像の幅*/
+	width: 25%;		/*画像の幅*/
+	padding: 2% 5%;	/*上下、左右へのブロック内の余白*/
 }
 /*「class="text"」を指定したブロック。テキストブロック。*/
 #contents .list .text {
-	width: 40%;		/*ブロックの幅。下のpaddingの5%とも連動するので変更の際は注意して下さい。*/
+	width: 60%;		/*ブロックの幅。下のpaddingの5%とも連動するので変更の際は注意して下さい。*/
 	padding: 2% 5%;	/*上下、左右へのブロック内の余白*/
 }
 
+/*「class="text"」を指定したブロック。テキストブロック。*/
+#contents .list .text table{
+	width:  100%;               /* 幅指定 */
+}
+#contents .list .text .table tr {
+	text-align: left;
+	vertical-align: text-top;
+}
+#contents .list .text .table tr:nth-child(odd) {
+    background-color:  #300;    /* 背景色指定 */
+} 
+#contents .list .text .table th,td {
+	border: solid 0px;              /* 枠線指定 */
+	border-color: #F00;
+	padding: 1% 1%;	/*上下、左右へのブロック内の余白*/
+}
+
+#contents .list .text .table th {
+	width:  180px;              /* 幅指定 */
+}
 /*偶数目のブロックの設定（画像とテキストブロックが左右交互に入れ替わる設定です。全部同じむきがよければこのブロックを削除します。）*/
 #contents .list:nth-of-type(even) .text {
 	order: 1;
