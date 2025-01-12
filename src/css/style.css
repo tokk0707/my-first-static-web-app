@@ -198,7 +198,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 /*コンテンツ
 ---------------------------------------------------------------------------*/
 #contents {
-	padding: 100px 0 50px;	/*上、左右、下へのコンテンツ内の余白*/
+	padding: 50px 0 50px;	/*上、左右、下へのコンテンツ内の余白*/
 	position: relative;
 	animation-name: opa2;	/*keyframes.cssで使う@keyframesの指定*/
 	animation-duration: 0.5S;	/*アニメーションの実行時間*/
@@ -208,7 +208,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 /*h2タグ*/
 #contents h2 {
 	clear: both;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 	font-size: 300%;	/*文字サイズ*/
 	text-align: center;	/*文字をセンタリング*/
 	letter-spacing: 0.2em;	/*文字間隔を少し広めにとる指定。通常がいいならこの１行削除。*/
@@ -324,16 +324,47 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 	top: -40px;
 }
 /*１つ目ブロックに表示させるテキスト*/
-#contents .list:nth-of-type(1)::before {
+/*#contents .list:nth-of-type(1)::before {
 	content: "Timeup";
-}
+}*/
 /*２つ目ブロックに表示させるテキスト*/
-#contents .list:nth-of-type(2)::before {
+/*#contents .list:nth-of-type(2)::before {
 	content: "Feature";
-}
+}*/
 /*３つ目ブロックに表示させるテキスト*/
-#contents .list:nth-of-type(3)::before {
+/*#contents .list:nth-of-type(3)::before {
 	content: "Expectations";
+}*/
+
+#contents .inner .terms-text {
+	position: relative;
+	border-radius: 25px;				/*角丸の指定。ほんの少し角が丸くなります。*/
+	overflow: hidden;				/*角丸から内容が飛び出ないよう、飛び出た部分を非表示にする指定*/
+	display: flex;
+	align-items: center;			/*中のブロックの縦並びの揃え方*/
+	background: #000;		/*背景色*/
+	color: #fff;			/*文字色*/
+	margin: 0 3% 30px;		/*ボックスの下に空けるスペース。上、左右、下への順番。*/
+}
+#contents .inner .terms-text h4 {
+	margin-left: 2%;
+	font-size: 140%;		/*文字サイズ*/
+}
+#contents .inner .terms-text table{
+	width:  90%;               /* 幅指定 */
+	margin-left: 5%;
+}
+#contents .inner .terms-text .table tr {
+	text-align: left;
+	vertical-align: text-top;
+}
+#contents .inner .terms-text .table th,td {
+	border: solid 1px;              /* 枠線指定 */
+	padding: 0% 1%;	/*上下、左右へのブロック内の余白*/
+}
+
+#contents .inner .terms-text .table th {
+	width:  180px;              /* 幅指定 */
 }
 
 /*ボックス内のボタン（共通）*/
@@ -486,7 +517,7 @@ ul.icon img:hover {
 /*ta1設定
 ---------------------------------------------------------------------------*/
 /*テーブル１行目に入った見出し部分（※caption）*/
-.ta1 caption, .ta2 caption {
+.ta1 caption, .ta2 caption, th {
 	border: 1px solid #ccc;	/*テーブルの枠線の幅、線種、色*/
 	border-bottom: none;	/*下線だけ消す*/
 	text-align: left;		/*文字を左寄せ*/
@@ -496,8 +527,8 @@ ul.icon img:hover {
 }
 /*ta1テーブル*/
 .ta1 {
-	width: 94%;
-	table-layout: fixed;
+	width: 50%;
+	table-layout: 80%;
 	margin: 0 3% 30px;
 }
 .ta1, .ta1 td, .ta1 th {
@@ -511,7 +542,11 @@ ul.icon img:hover {
 	text-align: center;	/*センタリング*/
 	font-weight: normal;
 }
-
+.ta1 td {
+	text-align: center;	/*センタリング*/
+	font-weight: normal;
+	background: rgba(0,0,0,100);	/*背景色*/
+}
 /*inputボタン
 ---------------------------------------------------------------------------*/
 #contents input[type="submit"].btn,
