@@ -61,6 +61,10 @@ a:hover {
 header {
 	position: relative;
 	padding: 20px;	/*ヘッダー内の余白*/
+	/*background: #010808;	/*背景色*/
+	background-image:url(../images/carbon03.jpg);
+	background-repeat:  no-repeat;
+	background-size: cover;
 }
 /*ヘッダーブロック（トップページへの追加設定）*/
 .home header {
@@ -271,12 +275,12 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 }
 /*ボックス内のfigure画像*/
 #contents .list figure {
-	width: 25%;		/*画像の幅*/
+	width: 40%;		/*画像の幅*/
 	padding: 2% 5%;	/*上下、左右へのブロック内の余白*/
 }
 /*「class="text"」を指定したブロック。テキストブロック。*/
 #contents .list .text {
-	width: 60%;		/*ブロックの幅。下のpaddingの5%とも連動するので変更の際は注意して下さい。*/
+	width: 100%;		/*ブロックの幅。下のpaddingの5%とも連動するので変更の際は注意して下さい。*/
 	padding: 2% 5%;	/*上下、左右へのブロック内の余白*/
 }
 
@@ -547,6 +551,12 @@ ul.icon img:hover {
 	font-weight: normal;
 	background: rgba(0,0,0,100);	/*背景色*/
 }
+@media screen and (max-width: 640px) {
+	.ta1 {
+	  width: 95%;
+	}
+}
+
 /*inputボタン
 ---------------------------------------------------------------------------*/
 #contents input[type="submit"].btn,
