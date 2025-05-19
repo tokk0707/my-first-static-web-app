@@ -275,7 +275,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 }
 /*ボックス内のfigure画像*/
 #contents .list figure {
-	width: 40%;		/*画像の幅*/
+	width: 100%;		/*画像の幅*/
 	padding: 2% 5%;	/*上下、左右へのブロック内の余白*/
 }
 /*「class="text"」を指定したブロック。テキストブロック。*/
@@ -316,6 +316,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 	position: absolute;
 	color: rgba(255,255,255,0.15);	/*文字色。255,255,255は白のことで、0.15は色が15%出た状態のこと。*/
 	font-family: 'Tangerine', cursive;	/*冒頭で読み込んだGoogle Fontsを適用する指定*/
+	 content: attr(data-content); /* ← ポイント！ */
 }
 /*奇数番目のブロックの文字の配置場所指定*/
 #contents .list:nth-of-type(odd)::before {
@@ -327,6 +328,7 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 	right: 0px;
 	top: -40px;
 }
+
 /*１つ目ブロックに表示させるテキスト*/
 /*#contents .list:nth-of-type(1)::before {
 	content: "Timeup";
@@ -350,9 +352,19 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 	color: #fff;			/*文字色*/
 	margin: 0 3% 30px;		/*ボックスの下に空けるスペース。上、左右、下への順番。*/
 }
+/*ボックス内のp（段落）タグ*/
+#contents .inner .terms-text p {
+	padding: 0;		/*余白のリセット*/
+	margin-left: 3%;
+}
 #contents .inner .terms-text h4 {
+	padding-top: 2%;
 	margin-left: 2%;
 	font-size: 140%;		/*文字サイズ*/
+}
+#contents .inner .terms-text h5 {
+	margin-left: 3%;
+	font-size: 120%;		/*文字サイズ*/
 }
 #contents .inner .terms-text table{
 	width:  90%;               /* 幅指定 */
@@ -369,6 +381,19 @@ body.is-fixed-menu #menubar ul.ddmenu li a {
 
 #contents .inner .terms-text .table th {
 	width:  180px;              /* 幅指定 */
+}
+#contents .inner .terms-text ul {
+  font-size: 1em;
+  margin-left: 5%;
+}
+
+#contents .inner .terms-text ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+#contents .inner .terms-text section {
+	margin-top: 10px;
 }
 
 /*ボックス内のボタン（共通）*/
@@ -808,6 +833,43 @@ body.s-n .sub,body.s-n #footermenu {display: none;}
 
 }
 
+.privacy-policy {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background-color: #fff;
+}
+
+.privacy-policy h1 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.privacy-policy section {
+  margin-bottom: 40px;
+}
+
+.privacy-policy h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #222;
+  border-left: 4px solid #007acc;
+  padding-left: 10px;
+}
+
+.privacy-policy p, 
+.privacy-policy ul {
+  font-size: 1em;
+  margin: 0 0 10px 0;
+}
+
+.privacy-policy ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
 
 
 /*画面幅480px以下の設定

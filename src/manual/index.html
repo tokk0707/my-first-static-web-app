@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CLRの使い方</title>
+    <link rel="icon" href="../images/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CLR(CircuitLaptimeRecoder)の使い方を説明します">
+    <meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/openclose.js"></script>
+    <script src="../js/fixmenu.js"></script>
+    <script src="../js/fixmenu_pagetop.js"></script>
+    <script src="../js/ddmenu_min.js"></script>
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+    <div id="container">
+
+        <header>
+            <h1 id="logo"><a href="../index2.html"><img src="../images/logo.png" alt="CIRCUIT LAPTIME RECORDER"></a></h1>
+        </header>
+
+		<!--PC用（801px以上端末）メニュー-->
+		<nav id="menubar" class="nav-fix-pos">
+			<ul class="inner">
+				<li><a href="../index2.html">HOME<span>ホーム</span></a></li>
+				<li><a href="javascript:void(0)" class="cursor-default">MANUAL<span>使い方</span></a>
+					<ul class="ddmenu">
+						<li><a href="index.html">計測する</a></li>
+						<li><a href="history.html">履歴を見る</a></li>
+						<li><a href="ranking.html">ランキングを見る</a></li>
+						<li><a href="setting.html">設定を変更する</a></li>
+					</ul>
+				</li>
+				<li><a href="../options/index.html">OPTIONS<span>有料オプション</span></a></li>
+				<li><a href="../terms/index.html">TERMS<span>利用規約</span></a></li>
+				<li><a href="../contact/index.html">CONTACT<span>お問い合わせ</span></a></li>
+			</ul>
+		</nav>
+
+
+		<!--小さな端末用（800px以下端末）メニュー-->
+		<nav id="menubar-s">
+			<ul>
+				<li><a href="../index2.html">HOME<span>ホーム</span></a></li>
+				<li id="menubar_hdr2" class="close">MANUAL<span>利用方法</span>
+					<ul id="menubar-s2">
+						<li><a href="drive.html">計測する</a></li>
+						<li><a href="history.html">履歴を見る</a></li>
+						<li><a href="ranking.html">ランキングを見る</a></li>
+						<li><a href="setting.html">設定を変更する</a></li>
+					</ul>
+				</li>
+				<li><a href="../options/index.html">OPTIONS<span>有料オプション</span></a></li>
+				<li><a href="../terms/index.html">TERMS<span>利用規約</span></a></li>
+				<li><a href="../contact/index.html">CONTACT<span>お問い合わせ</span></a></li>
+			</ul>
+		</nav>
+        <div id="contents">
+
+            <div class="inner">
+
+                <section>
+
+                    <h2>MANUAL<span>使い方</span></h2>
+
+                    <div class="list" data-content="Select">
+                        <div class="text">
+                            <h4>サーキット選択</h4>
+                            <p>これから走行するサーキットを選択します。登録済みのサーキットを選べば、すぐに計測を開始できます。<br>
+                                また、国選択では海外のサーキットも選択可能です。CLRは、グローバルにドライバーを支援します。<br>
+                                もし一覧に希望のサーキットがなくても、がっかりしないでください。<br>
+                                CLRにはサーキット登録機能があり、新しいサーキットを簡単に追加できます。<br>
+                                あなたのお気に入りのサーキットをぜひ登録してください。さらに、作成したサーキットを仲間と共有することもできます。<br>
+                            </p>
+                        </div>
+                        <figure><img src="../images/circuit.jpg" alt=""></figure>
+                    </div>
+
+                    <div class="list" data-content="Measurement">
+                        <div class="text">
+                            <h4>タイム計測　計測</h4>
+                            <p>小さなスマートフォン画面には、多くの情報が詰め込まれています。<br>
+                                しかし、走行中にすべてを把握する必要はありません。それぞれの項目を理解し、必要な情報に注目してください。<br>
+                            </p>
+                            <p class="btn1"><a href="#">もっとみる</a></p>
+                        </div>
+                        <figure><img src="../images/drive.png" alt=""></figure>
+                    </div>
+
+                    <div class="list" data-content="Description">
+                        <div class="text">
+                            <h4>画面説明</h4>
+                            <p>① 走行モード：現在の走行状態を表示します。<br><br>
+                                ② 選択情報：選択中のサーキットや走行車の情報を表示します。<br>
+                                ③ ラップ情報：走行を開始してからのラップ数と、現在の走行セクターを表示します。<br>
+                                ④ Delta表示：現在のラップと、過去または本日のベストラップとの差を表示します。<br>
+                            </p>
+                        </div>
+                        <figure><img src="../images/drive1.jpg" alt=""></figure>
+                    </div>
+
+                    <div class="list" data-content="Description">
+                        <div class="text">
+                            <h4>画面説明</h4>
+                            <p>⑤ ラップタイム表示：<br>
+                                •	Last（Lap Time）：最終ラップタイム。コントロールラインまたはゴールラインを通過すると確定します。<br>
+                                •	Best（Lap Time）：過去の走行履歴で最も速かったラップタイム。<br>
+                                •	Today（Lap Time）：本日の走行履歴で最も速かったラップタイム。<br><br>
+                                ⑥ MAX速度：直近10秒間の最高速度を表示します。GPS情報から算出されるため、実車のメーター表示とは異なります。<br><br>
+                                ⑦ Current Lap（Time）：現在走行中のラップタイムを表示します。コントロールラインを通過してからの時間を計測します。<br><br>
+                                ⑧ MIN速度：直近10秒間の最低速度を表示します。GPS情報から算出されるため、実車のメーター表示とは異なります。<br><br>
+                                </p>
+                        </div>
+                        <figure><img src="../images/drive2.jpg" alt=""></figure>
+                    </div>
+
+                    <div class="list" data-content="Description">
+                        <div class="text">
+                            <h4>画面説明</h4>
+                            <p>⑨ セクタータイム：走行中の各セクターのタイムを表示します。<br><br>
+                                ⑩ Gridボタン：グリッドスタートモードに切り替えます。車の発進と同時に計測を開始する際に使用します。<br><br>
+                                ⑪ 計測操作ボタン：<br>
+                                •	Start：計測を開始します。GPSがONになり、コントロールラインの通過を検出すると、ラップタイムの計測が始まります。<br>
+                                •	Stop：ボタンを長押しすると計測を終了し、GPSがOFFになります。<br><br>
+                                ⑫ 戻るボタン：サーキット選択画面に戻ります。計測を停止した状態で、ボタンを長押ししてください。<br><br>
+                                </p>
+                           </div>
+                        <figure><img src="../images/drive3.jpg" alt=""></figure>
+                    </div>
+
+                    <div class="list" data-content="Caution">
+                        <div class="text">
+                            <h4>注意事項</h4>
+                            <p>※タイム計測画面では、画面のスリープ機能が無効になります。バッテリーの消耗にご注意ください。<br>
+                            </p>
+                           </div>
+                        <figure><img src="../images/battery.jpg" alt=""></figure>
+                    </div>
+                </section>
+
+            </div>
+            <!--/.inner-->
+
+        </div>
+        <!--/#contents-->
+
+        <footer>
+
+            <div id="footermenu" class="inner">
+                <ul>
+                    <li class="title">タイトル</li>
+                    <li><a href="#">メニューサンプル</a></li>
+                    <li><a href="#">メニューサンプル</a></li>
+                    <li><a href="#">メニューサンプル</a></li>
+                    <li><a href="#">メニューサンプル</a></li>
+                    <li><a href="#">メニューサンプル</a></li>
+                </ul>
+                <ul>
+                    <li class="title">タイトル</li>
+                    <li><a href="#">メニューサンプル</a></li>
+                    <li><a href="#">メニューサンプル</a></li>
+                    <li><a href="#">メニューサンプル</a></li>
+                    <li><a href="#">メニューサンプル</a></li>
+                    <li><a href="#">メニューサンプル</a></li>
+                </ul>
+                <ul>
+                    <li class="title">タイトル</li>
+                    <li><a href="#">メニューサンプル</a></li>
+                    <li><a href="#">メニューサンプル</a></li>
+                    <li><a href="#">メニューサンプル</a></li>
+                    <li><a href="#">メニューサンプル</a></li>
+                    <li><a href="#">メニューサンプル</a></li>
+                </ul>
+                <ul>
+                    <li class="title">タイトル</li>
+                    <li><a href="#">メニューサンプル</a></li>
+                    <li><a href="#">メニューサンプル</a></li>
+                    <li><a href="#">メニューサンプル</a></li>
+                    <li><a href="#">メニューサンプル</a></li>
+                    <li><a href="#">メニューサンプル</a></li>
+                </ul>
+            </div>
+            <!--/#footermenu-->
+
+            <div id="copyright">
+                <small>Copyright&copy; <a href="index.html">CLR Racing</a> All Rights Reserved.</small>
+                <span class="pr"><a href="https://template-party.com/" target="_blank">《Web
+                        Design:Template-Party》</a></span>
+            </div>
+            <!--/#copyright-->
+
+        </footer>
+
+    </div>
+    <!--/#container-->
+
+    <p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+    <!--メニュー開閉ボタン-->
+    <div id="menubar_hdr" class="close"></div>
+
+    <!--メニューの開閉処理-->
+    <script>
+        open_close("menubar_hdr", "menubar-s");
+    </script>
+
+    <!--「WORKS」の子メニュー-->
+    <script>
+        open_close("menubar_hdr2", "menubar-s2");
+    </script>
+
+</body>
+
+</html>
