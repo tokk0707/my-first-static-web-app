@@ -2,46 +2,50 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CLRの使い方</title>
-    <link rel="icon" href="../images/favicon.ico">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CLRの使い方</title>
+	<link rel="icon" href="../images/favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="CLR(CircuitLaptimeRecoder)の使い方を説明します">
-    <meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/openclose.js"></script>
-    <script src="../js/fixmenu.js"></script>
-    <script src="../js/fixmenu_pagetop.js"></script>
-    <script src="../js/ddmenu_min.js"></script>
-    <!--[if lt IE 9]>
+	<meta name="description" content="CLR(CircuitLaptimeRecoder)の使い方を説明します">
+	<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="../js/openclose.js"></script>
+	<script src="../js/fixmenu.js"></script>
+	<script src="../js/fixmenu_pagetop.js"></script>
+	<script src="../js/ddmenu_min.js"></script>
+	<!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
 
 <body>
+	<div id="container">
+		<header>
+			<h1 id="logo"><a href="../index2.html"><img src="../images/logo.png" alt="CIRCUIT LAPTIME RECORDER"></a>
+			</h1>
+		</header>
 
-    <div id="container">
-
-        <header>
-            <h1 id="logo"><a href="../index.html"><img src="../images/logo.png" alt="CIRCUIT LAPTIME RECORDER"></a></h1>
-        </header>
-
- 		<!--PC用（801px以上端末）メニュー-->
-         <nav id="menubar" class="nav-fix-pos">
+		<!--PC用（801px以上端末）メニュー-->
+		<nav id="menubar" class="nav-fix-pos">
 			<ul class="inner">
 				<li><a href="../index2.html">HOME<span>ホーム</span></a></li>
 				<li><a href="javascript:void(0)" class="cursor-default">MANUAL<span>使い方</span></a>
 					<ul class="ddmenu">
-						<li><a href="drive.html">計測する</a></li>
-						<li><a href="history.html">履歴を見る</a></li>
-						<li><a href="ranking.html">ランキングを見る</a></li>
-						<li><a href="setting.html">設定を変更する</a></li>
+						<li><a href="../manual/index.html">計測する</a></li>
+						<li><a href="../manual/history.html">履歴を見る</a></li>
+						<li><a href="../manual/ranking.html">ランキングを見る</a></li>
+						<li><a href="../manual/setting.html">設定を変更する</a></li>
 					</ul>
 				</li>
 				<li><a href="../options/index.html">OPTIONS<span>有料オプション</span></a></li>
-				<li><a href="../terms/index.html">TERMS<span>利用規約</span></a></li>
+				<li><a href="javascript:void(0)" class="cursor-default">TERMS<span>利用規約</span></a>
+					<ul class="ddmenu">
+						<li><a href="../terms/index.html">利用規約</a></li>
+						<li><a href="../terms/privacy_policy.html">プライバシーポリシー</a></li>
+					</ul>
+				</li>
 				<li><a href="../contact/index.html">CONTACT<span>お問い合わせ</span></a></li>
 			</ul>
 		</nav>
@@ -52,123 +56,179 @@
 				<li><a href="../index2.html">HOME<span>ホーム</span></a></li>
 				<li id="menubar_hdr2" class="close">MANUAL<span>利用方法</span>
 					<ul id="menubar-s2">
-						<li><a href="drive.html">計測する</a></li>
-						<li><a href="history.html">履歴を見る</a></li>
-						<li><a href="ranking.html">ランキングを見る</a></li>
-						<li><a href="setting.html">設定を変更する</a></li>
+						<li><a href="../manual/index.html">計測する</a></li>
+						<li><a href="../manual/history.html">履歴を見る</a></li>
+						<li><a href="../manual/ranking.html">ランキングを見る</a></li>
+						<li><a href="../manual/setting.html">設定を変更する</a></li>
 					</ul>
 				</li>
 				<li><a href="../options/index.html">OPTIONS<span>有料オプション</span></a></li>
-				<li><a href="../terms/index.html">TERMS<span>利用規約</span></a></li>
+				<li id="menubar_hdr3" class="close">TERMS<span>利用規約</span>
+					<ul id="menubar-s3">
+						<li><a href="../terms/index.html">利用規約</a></li>
+						<li><a href="../terms/privacy_policy.html">プライバシーポリシー</a></li>
+					</ul>
+				</li>
 				<li><a href="../contact/index.html">CONTACT<span>お問い合わせ</span></a></li>
 			</ul>
 		</nav>
-        <div id="contents">
 
-            <div class="inner">
+		<div id="contents">
 
-                <section>
+			<div class="inner">
 
-                    <h2>SETTING<span>設定</span></h2>
-                    <p>公開名や愛車情報を登録します。</p>
-                    <div class="list" data-content="Change">
-                        <div class="text">
-                            <h4>ユーザ情報</h4>
-                            <p></p>
-                        </div>
-                        <figure><img src="../images/nocontents.jpg" alt=""></figure>
-                    </div>
+				<section>
 
-                    <div class="list" data-content="Change">
-                        <div class="text">
-                            <h4>車情報</h4>
-                            <p></p>
-                        </div>
-                        <figure><img src="../images/nocontents.jpg" alt=""></figure>
-                    </div>
+					<h2>SETTING<span>設定</span></h2>
+					<h3>設定を変更する</h3>
+					<div class="list" data-content="User & Owned Car">
+						<div class="text">
+							<h4>公開ユーザー名と所有車の登録</h4>
+							<li><b>ユーザー名</b><br>
+								ランキング機能（有償）で表示されるユーザー名を指定します。<br>
+								無償利用の場合、ランキング上の名称は「Free」と表示されます。</li>
+							<li><b>所在国</b><br>
+								サーキット一覧で初期表示する国を選択します。</li>
 
-                    <div class="list" data-content="Change">
-                        <div class="text">
-                            <h4>リストにない車を登録する</h4>
-                            <p>
-                            </p>
-                        </div>
-                        <figure><img src="../images/nocontents.jpg" alt=""></figure>
-                    </div>
+						</div>
+						<figure><img src="../images/nocontents.jpg" alt=""></figure>
+					</div>
 
-                </section>
+					<div class="list" data-content="Target">
+						<div class="text">
+							<h4>比較するラップタイムの切り替え</h4>
+							<p>
+								CLRでは、最速ラップとの比較をリアルタイムで行うことができます。<br>
+								比較対象は、過去すべての走行履歴の中で最速となった「BestLap」と、本日の走行履歴から最速となった「TodayLap」のいずれかを選択可能です。<br>
+								比較するラップタイムは、SETTING画面の「比較するラップタイム」から指定できます。<br>
+								<li> <b>ALL</b>：過去すべての走行履歴の最速ラップ</li>
+								<li> <b>DAY</b>：本日の走行履歴の最速ラップ</li>
+							</p>
+						</div>
+						<figure><img src="../images/nocontents.jpg" alt="" width="50%"></figure>
+					</div>
 
-            </div>
-            <!--/.inner-->
+					<div class="list" data-content="Spotter">
+						<div class="text">
+							<h4>Spotterの読み上げ機能（有償機能）</h4>
+							<p>走行中にラインを通過した際、音声で情報を読み上げます。</p>
+							<li><b>なし</b>：音声読み上げを行いません</li>
+							<li><b>LapTime</b>：コントロールライン通過時にラップタイムを読み上げます</li>
+							<li><b>LapTime + LapDelta</b>：ラップタイムとBestLapとのタイム差を読み上げます</li>
+							<li><b>LapTime + LapDelta + SectorDelta</b>：上記に加え、セクター通過時にBestLapのセクタータイムとの差も読み上げます
+							</li>
+						</div>
+						<figure><img src="../images/nocontents.jpg" alt=""></figure>
+					</div>
 
-        </div>
-        <!--/#contents-->
+					<div class="list" data-content="Beacon">
+						<div class="text">
+							<h4>Deltaビーコン</h4>
+							<p>Deltaバー（BestLapとの差）の状況を音で通知します。<br>
+								※ 音量は設定可能（初期値は10）</p>
+							<li><b>遅い</b>：低音（ピッ）</li>
+							<li><b>速い</b>：高音（ピッピッ）</li>
+							<li><b>差が少ない</b>：無音</li>
+						</div>
+						<figure><img src="../images/nocontents.jpg" alt=""></figure>
+					</div>
 
-        <footer>
+					<div class="list" data-content="Selected">
+						<div class="text">
+							<h4>選択中の車両</h4>
+							<p>現在選択している所有車名を表示します。</p>
+							<li><b>無償利用</b>：1台のみ登録可能</li>
+							<li><b>有償利用</b>：登録台数の上限なし</li>
+						</div>
+						<figure><img src="../images/nocontents.jpg" alt=""></figure>
+					</div>
 
-            <div id="footermenu" class="inner">
-                <ul>
-                    <li class="title">タイトル</li>
-                    <li><a href="#">メニューサンプル</a></li>
-                    <li><a href="#">メニューサンプル</a></li>
-                    <li><a href="#">メニューサンプル</a></li>
-                    <li><a href="#">メニューサンプル</a></li>
-                    <li><a href="#">メニューサンプル</a></li>
-                </ul>
-                <ul>
-                    <li class="title">タイトル</li>
-                    <li><a href="#">メニューサンプル</a></li>
-                    <li><a href="#">メニューサンプル</a></li>
-                    <li><a href="#">メニューサンプル</a></li>
-                    <li><a href="#">メニューサンプル</a></li>
-                    <li><a href="#">メニューサンプル</a></li>
-                </ul>
-                <ul>
-                    <li class="title">タイトル</li>
-                    <li><a href="#">メニューサンプル</a></li>
-                    <li><a href="#">メニューサンプル</a></li>
-                    <li><a href="#">メニューサンプル</a></li>
-                    <li><a href="#">メニューサンプル</a></li>
-                    <li><a href="#">メニューサンプル</a></li>
-                </ul>
-                <ul>
-                    <li class="title">タイトル</li>
-                    <li><a href="#">メニューサンプル</a></li>
-                    <li><a href="#">メニューサンプル</a></li>
-                    <li><a href="#">メニューサンプル</a></li>
-                    <li><a href="#">メニューサンプル</a></li>
-                    <li><a href="#">メニューサンプル</a></li>
-                </ul>
-            </div>
-            <!--/#footermenu-->
+					<div class="list" data-content="Registration">
+						<div class="text">
+							<h4>車両情報の登録</h4>
+							<p>所有車を識別するための詳細情報を入力します。</p>
+							<li><b>所有車名</b>：任意の名称を入力。同じ車両でも複数登録が可能（例：夏用・冬用など）。BestLapは車両単位で管理されます。</li>
+							<li><b>チーム名</b>：ランキング表示時に表示されます。</li>
+							<li><b>車メーカー</b>：リストから選択。無い場合は任意に入力可能。</li>
+							<li><b>モデル名</b>：リストから選択。リストに無ければ自由入力。</li>
+							<li><b>排気量</b>：モデル選択時に自動入力されますが、修正も可能です（クラス分類に影響）。</li>
+							<li><b>ターボ</b>：有無を選択（クラス分類に影響）。</li>
+							<li><b>駆動方式</b>：FF/FR/4Wなどを選択。</li>
+							<li><b>クラス</b>：排気量とターボの有無で自動分類されます。上位クラスへの変更は可能ですが、下位クラスには変更できません。</li>
+						</div>
+						<figure><img src="../images/nocontents.jpg" alt=""></figure>
+					</div>
+			</div>
+			<!--/.inner-->
 
-            <div id="copyright">
-                <small>Copyright&copy; <a href="index.html">CLR Racing</a> All Rights Reserved.</small>
-                <span class="pr"><a href="https://template-party.com/" target="_blank">《Web
-                        Design:Template-Party》</a></span>
-            </div>
-            <!--/#copyright-->
+		</div>
+		<!--/#contents-->
 
-        </footer>
+		<footer>
+			<div id="footermenu" class="inner">
+				<ul>
+					<li class="title">HOME</li>
+					<li><a href="../index2.html">コンセプト</a></li>
+				</ul>
+				<ul>
+					<li class="title">MANUAL</li>
+					<li><a href="../manual/index.html">計測する</a></li>
+					<li><a href="../manual/creating.html">サーキットの作成</a></li>
+					<li><a href="../manual/operations.html">その他の操作</a></li>
+					<li><a href="../manual/history.html">履歴を見る</a></li>
+					<li><a href="../manual/laptime.html">ラップタイム情報の表示</a></li>
+					<li><a href="../manual/recordline.html">レコードラインの確認</a></li>
+					<li><a href="../manual/ranking.html">ランキングを見る</a></li>
+					<li><a href="../manual/setting.html">設定</a></li>
+				</ul>
+				<ul>
+					<li class="title">OPTIONS</li>
+					<li><a href="../options/index.html">オプションの説明</a></li>
+					<li><a href="../options/membership.html">会員登録と解約</a></li>
+					<li><a href="../options/inst-point.html">正確に計測するには</a></li>
+				</ul>
+				<ul>
+					<li class="title">TERMS</li>
+					<li><a href="../terms/index.html">利用規約</a></li>
+					<li><a href="../terms/privacy_policy.html">プライバシーポリシー</a></li>
+				</ul>
+				<ul>
+					<li class="title">CONTACT</li>
+					<li><a href="../contact/index.html">問い合わせフォーム</a></li>
+					<li><a href="../contact/about.html">当サイトについて</a></li>
+				</ul>
+			</div>
+			<!--/#footermenu-->
+			<div id="copyright">
+				<small>&copy; 2025 <a href="../index2.html">CLR Racing</a></small>
+				<span class="pr"><a href="https://template-party.com/" target="_blank">《Web
+						Design:Template-Party》</a></span>
+			</div>
+			<!--/#copyright-->
+		</footer>
 
-    </div>
-    <!--/#container-->
+	</div>
+	<!--/#container-->
 
-    <p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+	<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
 
-    <!--メニュー開閉ボタン-->
-    <div id="menubar_hdr" class="close"></div>
+	<!--メニュー開閉ボタン-->
+	<div id="menubar_hdr" class="close"></div>
 
-    <!--メニューの開閉処理-->
-    <script>
-        open_close("menubar_hdr", "menubar-s");
-    </script>
+	<!--メニューの開閉処理-->
+	<script>
+		open_close("menubar_hdr", "menubar-s");
+	</script>
 
-    <!--「WORKS」の子メニュー-->
-    <script>
-        open_close("menubar_hdr2", "menubar-s2");
-    </script>
+	<!--「WORKS」の子メニュー-->
+	<script>
+		open_close("menubar_hdr2", "menubar-s2");
+	</script>
 
+	<!--「WORKS」の子メニュー-->
+	<script>
+		open_close("menubar_hdr3", "menubar-s3");
+	</script>
 </body>
 
 </html>

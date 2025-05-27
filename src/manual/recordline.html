@@ -73,85 +73,61 @@
             </ul>
         </nav>
 
+
         <div id="contents">
 
             <div class="inner">
 
                 <section>
-                    <h2>HISTORY<span>履歴表示</span></h2>
-                    <h3>履歴を見る</h3>
 
-                    <p>これまでのラップタイムを確認できます。</pp>
+                    <h2>MANUAL<span>使い方</span></h2>
+                    <h3>レコードラインの確認</h3>
 
-                    <div class="list" data-content="History">
+                    <div class="list" data-content="Recoed-Line">
                         <div class="text">
-                            <h4>サーキット選択/日付選択</h4>
-                            <li><b>サーキット選択</b><br>
-                                走行履歴のあるサーキットを一覧表示します。<br>表示された中から選択してください。</li>
-                            <li><b>日付選択</b><br>
-                                走行履歴のある日付を一覧表示します。<br>表示された中から選択してください。</li>
-                        </div>
-                        <figure><img src="../images/histrory00.jpg" alt=""></figure>
-                    </div>
-
-                    <div class="list" data-content="List">
-                        <div class="text">
-                            <h4>ラップタイム一覧</h4>
+                            <h4>レコードラインの見方</h4>
                             <p>
-                                選択した日のラップタイムを一覧表示します。</p>
-                            <ul>
-                                <li>① 周回数</li>
-                                <li>② ラップタイム</li>
-                                <li>③ ベストラップとのタイム差</li>
-                                <li>④ 順位</li>
-                                <li>⑤ 走行時間</li>
-                                <li>⑥ セクタータイム（★はセクターベストを示します）</li>
-                            </ul>
-                            <p class="btn1"><a href="../manual/laptime.html">ラップタイム情報の表示</a></p>
-                        </div>
-                        <figure><img src="../images/histrory01.jpg" alt="" width="40%"></figure>
-                    </div>
-
-                    <div class="list" data-content="Average">
-                        <div class="text">
-                            <h4>平均タイム</h4>
-                            <p>
-                                選択した日の平均ラップタイムを表示します。<br>
-                                平均タイムは、独自アルゴリズムによって算出されます。<br>
-                                有償機能のランキング表示では、この平均ラップタイムをもとに競い合います。<br>
+                                該当ラップの走行ラインを地図上に表示します。<br>
+                                車両の速度に応じて、走行ラインの色が青 → 緑 → 黄色 → 赤へと変化します。<br>
+                                BestLapの走行速度を基準として表示されるため、BestLapとのラインや車両速度の差を視覚的に確認できます。<br>
                             </p>
                         </div>
-                        <figure><img src="../images/histrory02.jpg" alt=""></figure>
+                        <figure><img src="../images/nocontents.jpg" alt=""></figure>
                     </div>
 
-                    <div class="list" data-content="Output">
+                    <div class="list" data-content="Compare">
                         <div class="text">
-                            <h4>CSVに出力</h4>
+                            <h4>ベストラップと比較する</h4>
                             <p>
-                                出力したいサーキットを選択します。<br>
-                                日付選択画面で、CSV出力したい日付を長押しすると、コンテキストメニューが表示されます。<br>
-                                「CSVに出力」を選択すると、CSVファイルがスマートフォンの内部メモリに保存されます。<br>
-                                その後、スマートフォンをUSBで接続してファイルを取り出してください。<br>
+                                地図の左下に表示されている「BEST ON/OFF」ボタンを使うと、BestLap時の走行ラインを表示・非表示に切り替えられます。<br>
+                                該当ラップと重ねて表示することで、違いを明確に確認できます。<br>
+                                比較対象のBestLapを変更したい場合は、「その他の操作」を参照してください。<br>
                             </p>
                         </div>
-                        <figure><img src="../images/histrory03.jpg" alt=""></figure>
+                        <figure><img src="../images/nocontents.jpg" alt="" width="50%"></figure>
                     </div>
-
-                    <div class="list" data-content="Change">
+                    <div class="list" data-content="Other Record">
                         <div class="text">
-                            <h4>ベストラップの変更</h4>
+                            <h4>他のラップを確認する</h4>
                             <p>
-                                ラップ表示一覧で任意のラップを長押しすると、コンテキストメニューが表示され、以下の操作が可能です。</p>
-                            <li><b>BestLapに設定</b>：選択したラップをBestLapとして登録し、走行時にリアルタイム比較が可能になります。<br>（※SETTINGで比較対象が「ALL」に設定されている場合）
-                            </li>
-                            <li><b>TodayLapに設定</b>：選択したラップをTodayLapとして登録し、走行時にリアルタイム比較が可能になります。<br>（※SETTINGで比較対象が「TODAY」に設定されている場合）
-                            </li>
-                            <li><b>比較対象に設定</b>：レコードライン表示において、比較対象のラインを強制的に変更します。BestLapとして表示されますが、走行中に使用されるBestLapには影響しません。
-                            </li>
+                                簡単に別の周回の走行ラインへ切り替えが可能です。<br>
+                                地図の右下に表示されている三角ボタンを押すと、1つ前または1つ後のラップに切り替えられます。<br>
+                            </p>
                         </div>
-                        <figure><img src="../images/histrory04.jpg" alt=""></figure>
+                        <figure><img src="../images/nocontents.jpg" alt="" width="50%"></figure>
+                    </div>
+                    <div class="list" data-content="Laptime">
+                        <div class="text">
+                            <h4>ラップタイムの情報</h4>
+                            <p>
+                                現在表示中の周回数、ラップタイム、BestLapとのタイム差を表示します。<br>
+                                「BEST ON」の状態では、BestLapのラップタイムもあわせて表示されます。<br>
+                            </p>
+                        </div>
+                        <figure><img src="../images/nocontents.jpg" alt="" width="50%"></figure>
                     </div>
                 </section>
+
             </div>
             <!--/.inner-->
 

@@ -73,85 +73,104 @@
             </ul>
         </nav>
 
+
         <div id="contents">
 
             <div class="inner">
 
                 <section>
-                    <h2>HISTORY<span>履歴表示</span></h2>
-                    <h3>履歴を見る</h3>
 
-                    <p>これまでのラップタイムを確認できます。</pp>
+                    <h2>MANUAL<span>使い方</span></h2>
 
-                    <div class="list" data-content="History">
+                    <div class="list" data-content="Create">
                         <div class="text">
-                            <h4>サーキット選択/日付選択</h4>
-                            <li><b>サーキット選択</b><br>
-                                走行履歴のあるサーキットを一覧表示します。<br>表示された中から選択してください。</li>
-                            <li><b>日付選択</b><br>
-                                走行履歴のある日付を一覧表示します。<br>表示された中から選択してください。</li>
-                        </div>
-                        <figure><img src="../images/histrory00.jpg" alt=""></figure>
-                    </div>
-
-                    <div class="list" data-content="List">
-                        <div class="text">
-                            <h4>ラップタイム一覧</h4>
+                            <h4>サーキットを作成しよう</h4>
                             <p>
-                                選択した日のラップタイムを一覧表示します。</p>
-                            <ul>
-                                <li>① 周回数</li>
-                                <li>② ラップタイム</li>
-                                <li>③ ベストラップとのタイム差</li>
-                                <li>④ 順位</li>
-                                <li>⑤ 走行時間</li>
-                                <li>⑥ セクタータイム（★はセクターベストを示します）</li>
-                            </ul>
-                            <p class="btn1"><a href="../manual/laptime.html">ラップタイム情報の表示</a></p>
-                        </div>
-                        <figure><img src="../images/histrory01.jpg" alt="" width="40%"></figure>
-                    </div>
-
-                    <div class="list" data-content="Average">
-                        <div class="text">
-                            <h4>平均タイム</h4>
-                            <p>
-                                選択した日の平均ラップタイムを表示します。<br>
-                                平均タイムは、独自アルゴリズムによって算出されます。<br>
-                                有償機能のランキング表示では、この平均ラップタイムをもとに競い合います。<br>
+                                走行したいサーキットが一覧にない場合、自作でサーキットが登録できます。<br>
+                                サーキットを作成するには、サーキット選択画面のアクションバーから「＋」ボタンを押してください。<br>
                             </p>
                         </div>
-                        <figure><img src="../images/histrory02.jpg" alt=""></figure>
+                        <figure><img src="../images/creating00.jpg" alt="" width="80%"></figure>
                     </div>
 
-                    <div class="list" data-content="Output">
+                    <div class="list" data-content="Input">
                         <div class="text">
-                            <h4>CSVに出力</h4>
+                            <h4>基本情報の入力</h4>
                             <p>
-                                出力したいサーキットを選択します。<br>
-                                日付選択画面で、CSV出力したい日付を長押しすると、コンテキストメニューが表示されます。<br>
-                                「CSVに出力」を選択すると、CSVファイルがスマートフォンの内部メモリに保存されます。<br>
-                                その後、スマートフォンをUSBで接続してファイルを取り出してください。<br>
+                                サーキットの基本情報を登録します。<br>
+                                「サーキット名」「英語表記のサーキット名」「コース種別」を入力してください。<br>
+                                コース種別は、以下の2種類から選択できます。</p>
+                            <li><b>ROUND</b>：周回コース（一般的なサーキット）</li>
+                            <li><b>ONWAY</b>：一方向のコース（ラリーなど）</li>
                             </p>
                         </div>
-                        <figure><img src="../images/histrory03.jpg" alt=""></figure>
+                        <figure><img src="../images/creating01.jpg" alt="" width="60%"></figure>
                     </div>
 
-                    <div class="list" data-content="Change">
+                    <div class="list" data-content="Running">
                         <div class="text">
-                            <h4>ベストラップの変更</h4>
+                            <h4>実走行による登録</h4>
                             <p>
-                                ラップ表示一覧で任意のラップを長押しすると、コンテキストメニューが表示され、以下の操作が可能です。</p>
-                            <li><b>BestLapに設定</b>：選択したラップをBestLapとして登録し、走行時にリアルタイム比較が可能になります。<br>（※SETTINGで比較対象が「ALL」に設定されている場合）
-                            </li>
-                            <li><b>TodayLapに設定</b>：選択したラップをTodayLapとして登録し、走行時にリアルタイム比較が可能になります。<br>（※SETTINGで比較対象が「TODAY」に設定されている場合）
-                            </li>
-                            <li><b>比較対象に設定</b>：レコードライン表示において、比較対象のラインを強制的に変更します。BestLapとして表示されますが、走行中に使用されるBestLapには影響しません。
-                            </li>
+                                基本情報の入力画面で「走行を開始する」ボタンを押します。<br>
+                                実際に走行しながら、コントロールラインとセクターラインを記録します。<br>
+                            </p>
                         </div>
-                        <figure><img src="../images/histrory04.jpg" alt=""></figure>
+                        <figure><img src="../images/creating02.jpg" alt="" width="50%"></figure>
+                    </div>
+
+                    <div class="list" data-content="Round">
+                        <div class="text">
+                            <h4>ROUNDタイプの登録</h4>
+                            <p>
+                                画面の指示にしたがって、コントロールライン／セクターラインの通過時にボタンを押してください。<br>
+                                ボタンをタップする代わりに、音量ボタンで同様の操作が可能です。<br>
+                                グローブを着用していて画面をタップできない場合でも、音量ボタンを使えばスムーズに操作できます。<br>
+                                <br>
+                                ROUNDタイプのコースでは、コントロールラインを通過して１周を検知すれば自動で作成完了となり、すぐに計測が始まります。<br>
+                            </p>
+                        </div>
+                        <figure><img src="../images/creating03.jpg" alt="" width="50%"></figure>
+                    </div>
+
+                    <div class="list" data-content="One-Way">
+                        <div class="text">
+                            <h4>ONEWAYタイプの登録</h4>
+                            <p>
+                                ONEWAYタイプの場合も、画面の指示にしたがって、コントロールライン／セクターラインの通過時にボタンを押してください。<br>
+                                Endボタンを押してゴールラインを登録すれば完了です。<br>
+                                <br>
+                                こちらもボタンをタップする代わりに、音量ボタンで同様の操作が可能です。<br>                               
+                                音量アップボタンはセクターボタン、音量ダウンボタンはEndボタンとして機能します。<br>
+                            </p>
+                        </div>
+                        <figure><img src="../images/creating04.jpg" alt="" width="50%"></figure>
+                    </div>
+
+                    <div class="list" data-content="Finish">
+                        <div class="text">
+                            <h4>作成完了</h4>
+                            <p>
+                                サーキットの作成が完了すると、自動でDRIVE画面に遷移し、計測を始めます。<br>
+                                自作したサーキットは、サーキット選択画面でサーキット名の前に「★」マークが付きます。<br>
+                            </p>
+                            <p class="btn1"><a href="../manual/operations.html#circuit-public">自作サーキットを公開する</a></p>
+                        </div>
+                        <figure><img src="../images/creating05.jpg" alt="" width="50%"></figure>
+                    </div>
+
+                    <div class="list" data-content="Caution">
+                        <div class="text">
+                            <h4>注意事項</h4>
+                            <p>
+                                走行中は、他の車の迷惑にならないよう十分に注意してください。<br>
+                                サーキット作成時は作業に集中するため、車の速度が低下しやすくなります。<br>
+                                周囲に他の車両がいないタイミングで作業を行うようにしてください。<br>
+                            </p>
+                        </div>
+                        <figure><img src="../images/creating06.jpg" alt=""></figure>
                     </div>
                 </section>
+
             </div>
             <!--/.inner-->
 

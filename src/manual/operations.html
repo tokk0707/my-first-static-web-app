@@ -73,85 +73,90 @@
             </ul>
         </nav>
 
+
         <div id="contents">
 
             <div class="inner">
 
                 <section>
-                    <h2>HISTORY<span>履歴表示</span></h2>
-                    <h3>履歴を見る</h3>
 
-                    <p>これまでのラップタイムを確認できます。</pp>
+                    <h2>MANUAL<span>使い方</span></h2>
+                    <h3>その他の操作</h3>
 
-                    <div class="list" data-content="History">
+                    <div class="list" data-content="Operations">
                         <div class="text">
-                            <h4>サーキット選択/日付選択</h4>
-                            <li><b>サーキット選択</b><br>
-                                走行履歴のあるサーキットを一覧表示します。<br>表示された中から選択してください。</li>
-                            <li><b>日付選択</b><br>
-                                走行履歴のある日付を一覧表示します。<br>表示された中から選択してください。</li>
+                            <h4>サーキット一覧からできる操作</h4>
+                            <p>表示されているサーキットを長押し、コンテキストメニューを表示することで、以下の操作が可能です。</p>
+                            <a href="#"></a>
+                            <li><a href="#best-delete">BestLapを削除</a></li>
+                            <li><a href="#best-delete">TodayLapを削除</a></li>
+                            <li><a href="#circuit-info">サーキット情報を表示</a></li><br>
+                            <p>以下は、自作サーキットのみ操作できます。</p>
+                            <li><a href="#circuit-delete">自作サーキットを削除</a></li>
+                            <li><a href="#circuit-update">自作サーキット名の変更</a></li>
+                            <li><a href="#circuit-public">公開を申請</a></li>
+                            <li><a href="#circuit-public">公開停止を申請</a></li>
                         </div>
-                        <figure><img src="../images/histrory00.jpg" alt=""></figure>
+                        <figure><img src="../images/opretions00.jpg" alt="" width="60%"></figure>
                     </div>
-
-                    <div class="list" data-content="List">
+                    <div class="list" data-content="Delete" id="best-delete" style="scroll-margin-top: 200px;">
                         <div class="text">
-                            <h4>ラップタイム一覧</h4>
+                            <h4>BespLap/TodayLapの削除</h4>
                             <p>
-                                選択した日のラップタイムを一覧表示します。</p>
-                            <ul>
-                                <li>① 周回数</li>
-                                <li>② ラップタイム</li>
-                                <li>③ ベストラップとのタイム差</li>
-                                <li>④ 順位</li>
-                                <li>⑤ 走行時間</li>
-                                <li>⑥ セクタータイム（★はセクターベストを示します）</li>
-                            </ul>
-                            <p class="btn1"><a href="../manual/laptime.html">ラップタイム情報の表示</a></p>
-                        </div>
-                        <figure><img src="../images/histrory01.jpg" alt="" width="40%"></figure>
-                    </div>
-
-                    <div class="list" data-content="Average">
-                        <div class="text">
-                            <h4>平均タイム</h4>
-                            <p>
-                                選択した日の平均ラップタイムを表示します。<br>
-                                平均タイムは、独自アルゴリズムによって算出されます。<br>
-                                有償機能のランキング表示では、この平均ラップタイムをもとに競い合います。<br>
+                                CLRでは、走行履歴から自動的に最速ラップが記録されます。<br>
+                                記録された最速ラップを削除して再計測したい場合は、サーキット一覧で該当するサーキットを長押しすると、コンテキストメニューが表示されます。<br>
+                                そのメニューから「BestLap」または「TodayLap」を選択して削除することができます。<br>
+                                削除を選択すると確認ポップアップが表示されるので、OKを選択します。<br>
                             </p>
                         </div>
-                        <figure><img src="../images/histrory02.jpg" alt=""></figure>
+                        <figure><img src="../images/opretions01.jpg" alt="" width="60%"></figure>
                     </div>
-
-                    <div class="list" data-content="Output">
+                    <div class="list" data-content="Map" id="circuit-info">
                         <div class="text">
-                            <h4>CSVに出力</h4>
+                            <h4>サーキットを確認する</h4>
                             <p>
-                                出力したいサーキットを選択します。<br>
-                                日付選択画面で、CSV出力したい日付を長押しすると、コンテキストメニューが表示されます。<br>
-                                「CSVに出力」を選択すると、CSVファイルがスマートフォンの内部メモリに保存されます。<br>
-                                その後、スマートフォンをUSBで接続してファイルを取り出してください。<br>
+                                登録されているサーキット情報を確認できます。<br>
+                                各サーキットのコントロールライン（ONEWAYタイプの場合はスタート／ゴール）やセクターラインの位置も確認できます。線の色は以下の通りです。<br>
+                                コントロールライン：赤<br>
+                                セクターライン：青<br><br>
+                            </p>
+                            <p>詳細情報<br>
+                                サーキットの住所、コース種別、公式サイトのURLが表示されます。<br>
                             </p>
                         </div>
-                        <figure><img src="../images/histrory03.jpg" alt=""></figure>
+                        <figure><img src="../images/opretions02.jpg" alt="" width="50%"></figure>
                     </div>
 
-                    <div class="list" data-content="Change">
+                    <div class="list" data-content="Public" id="circuit-public" style="scroll-margin-top: 200px;">
                         <div class="text">
-                            <h4>ベストラップの変更</h4>
+                            <h4>公開と停止</h4>
                             <p>
-                                ラップ表示一覧で任意のラップを長押しすると、コンテキストメニューが表示され、以下の操作が可能です。</p>
-                            <li><b>BestLapに設定</b>：選択したラップをBestLapとして登録し、走行時にリアルタイム比較が可能になります。<br>（※SETTINGで比較対象が「ALL」に設定されている場合）
-                            </li>
-                            <li><b>TodayLapに設定</b>：選択したラップをTodayLapとして登録し、走行時にリアルタイム比較が可能になります。<br>（※SETTINGで比較対象が「TODAY」に設定されている場合）
-                            </li>
-                            <li><b>比較対象に設定</b>：レコードライン表示において、比較対象のラインを強制的に変更します。BestLapとして表示されますが、走行中に使用されるBestLapには影響しません。
-                            </li>
+                                作成したサーキットを公開して、他のユーザーと共有しましょう。<br>
+                                「★」マークが付いたあなたの作成サーキットを長押しし、表示されるコンテキストメニューから「サーキットの公開申請」を選択します。<br>
+                                申請がサーバーに送信され、しばらくすると他のユーザーにも配信されます。<br>
+                                同じようにコンテキストメニューから「サーキットの公開停止」を選択すれば、いつでも公開を停止できます。<br><br>
+                                ※公開申請を行わない限り、サーキット情報がサーバーに送信されることはありません。<br>
+                                ※公開や停止には時間がかかる場合があります。あらかじめご了承ください。<br>
+                            </p>
                         </div>
-                        <figure><img src="../images/histrory04.jpg" alt=""></figure>
+                        <figure><img src="../images/opretions04.jpg" alt=""></figure>
                     </div>
+                    <div class="list" data-content="Refresh" id="circuit-refresh" style="scroll-margin-top: 200px;">
+                        <div class="text">
+                            <h4>サーキット一覧の更新</h4>
+                            <p>
+                                最新のサーキット情報を一覧に反映させるには、一覧の先頭までスクロールし、そのまま下にスワイプしてください。サーバーから最新情報がダウンロードされます。<br>
+                            </p>
+                        </div>
+                        <video width="640" height="360" controls>
+                            <source src="../images/screen-20250524-161733.mp4" type="video/mp4">
+                            お使いのブラウザは video タグをサポートしていません。
+                        </video>
+                        <figure><img src="../images/opretions05.jpg" alt=""></figure>
+                    </div>
+
                 </section>
+
             </div>
             <!--/.inner-->
 

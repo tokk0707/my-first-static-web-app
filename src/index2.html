@@ -7,7 +7,7 @@
 	<title>Circuit Laptime Recorder</title>
 	<link rel="icon" href="images/favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="ようこそCircuit Laptime Recorderへ">
+	<meta name="description" content="GPSを使ったサーキットのラップタイム計測アプリ。スマホから無料で利用できる高機能GPSロガー">
 	<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/slide.css">
@@ -48,7 +48,12 @@
 					</ul>
 				</li>
 				<li><a href="options/index.html">OPTIONS<span>有料オプション</span></a></li>
-				<li><a href="terms/index.html">TERMS<span>利用規約</span></a></li>
+				<li><a href="javascript:void(0)" class="cursor-default">TERMS<span>利用規約</span></a>
+				<ul class="ddmenu">
+						<li><a href="terms/index.html">利用規約</a></li>
+						<li><a href="terms/privacy_policy.html">プライバシーポリシー</a></li>
+					</ul>
+				</li>
 				<li><a href="contact/index.html">CONTACT<span>お問い合わせ</span></a></li>
 			</ul>
 		</nav>
@@ -66,7 +71,12 @@
 					</ul>
 				</li>
 				<li><a href="options/index.html">OPTIONS<span>有料オプション</span></a></li>
-				<li><a href="terms/index.html">TERMS<span>利用規約</span></a></li>
+				<li id="menubar_hdr3" class="close">TERMS<span>利用規約</span>
+					<ul id="menubar-s3">
+						<li><a href="terms/index.html">利用規約</a></li>
+						<li><a href="terms/privacy_policy.html">プライバシーポリシー</a></li>
+					</ul>
+				</li>
 				<li><a href="contact/index.html">CONTACT<span>お問い合わせ</span></a></li>
 			</ul>
 		</nav>
@@ -146,7 +156,7 @@
 						</div>
 
 						<div class="list-column">
-							<figure><img src="images/history.jpg" alt=""></figure>
+							<figure><img src="images/ranking.jpg" alt=""></figure>
 							<div class="text">
 								<h4>ランキングを見る</h4>
 								<p>ランキング情報を表示します。</p>
@@ -186,54 +196,47 @@
 		</div>
 		<!--/#contents-->
 
-		<footer>
-
+        <footer>
 			<div id="footermenu" class="inner">
+				<ul>
+					<li class="title">HOME</li>
+					<li><a href="index2.html">コンセプト</a></li>
+                </ul>
 				<ul>
 					<li class="title">MANUAL</li>
 					<li><a href="manual/index.html">計測する</a></li>
-					<li><a href="#">サーキットの作成</a></li>
-					<li><a href="#">サーキット情報の表示</a></li>
-					<li><a href="#">その他の操作</a></li>
-					<li><a href="#">履歴を見る</a></li>
-					<li><a href="#">履歴の詳細</a></li>
-					<li><a href="#">レコードラインの確認</a></li>
-					<li><a href="#">ランキングを見る</a></li>
-					<li><a href="#">ランキングの詳細</a></li>
-					<li><a href="#">設定</a></li>
-					<li><a href="#">所有車の作成</a></li>
+					<li><a href="manual/creating.html">サーキットの作成</a></li>
+					<li><a href="manual/operations.html">その他の操作</a></li>
+					<li><a href="manual/history.html">履歴を見る</a></li>
+					<li><a href="manual/laptime.html">ラップタイム情報の表示</a></li>
+					<li><a href="manual/recordline.html">レコードラインの確認</a></li>
+					<li><a href="manual/ranking.html">ランキングを見る</a></li>
+					<li><a href="manual/setting.html">設定</a></li>
 				</ul>
 				<ul>
 					<li class="title">OPTIONS</li>
-					<li><a href="#">オプションの説明</a></li>
-					<li><a href="#">より正確な情報を得るためには</a></li>
+					<li><a href="options/index.html">オプションの説明</a></li>
+					<li><a href="options/membership.html">会員登録と解約</a></li>
+					<li><a href="options/inst-point.html">正確に計測するには</a></li>
 				</ul>
 				<ul>
 					<li class="title">TERMS</li>
-					<li><a href="#">利用規約</a></li>
-					<li><a href="#">プライバシーポリシー</a></li>
+					<li><a href="terms/index.html">利用規約</a></li>
+					<li><a href="terms/privacy_policy.html">プライバシーポリシー</a></li>
 				</ul>
 				<ul>
 					<li class="title">CONTACT</li>
-					<li><a href="#">問い合わせフォーム</a></li>
-					<li><a href="#">当サイトについて</a></li>
+					<li><a href="contact/index.html">問い合わせフォーム</a></li>
+					<li><a href="contact/about.html">当サイトについて</a></li>
 				</ul>
 			</div>
 			<!--/#footermenu-->
-
 			<div id="copyright">
-				<ul class="icon">
-					<li><a href="#"><img src="images/icon_facebook.png" alt="Facebook"></a></li>
-					<li><a href="#"><img src="images/icon_twitter.png" alt="Twitter"></a></li>
-					<li><a href="#"><img src="images/icon_instagram.png" alt="Instagram"></a></li>
-					<li><a href="#"><img src="images/icon_youtube.png" alt="TouTube"></a></li>
-				</ul>
-				<small>Copyright&copy; <a href="index.html">SAMPLE COMPANY</a> All Rights Reserved.</small>
+				<small>&copy; 2025 <a href="index2.html">CLR Racing</a></small>
 				<span class="pr"><a href="https://template-party.com/" target="_blank">《Web
 						Design:Template-Party》</a></span>
 			</div>
 			<!--/#copyright-->
-
 		</footer>
 
 	</div>
@@ -252,6 +255,11 @@
 	<!--「WORKS」の子メニュー-->
 	<script>
 		open_close("menubar_hdr2", "menubar-s2");
+	</script>
+
+	<!--「WORKS」の子メニュー-->
+	<script>
+		open_close("menubar_hdr3", "menubar-s3");
 	</script>
 
 </body>
