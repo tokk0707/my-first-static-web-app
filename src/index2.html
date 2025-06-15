@@ -4,11 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Circuit Laptime Recorder</title>
+	<title>高機能GPSロガーアプリ CLR</title>
 	<link rel="icon" href="images/favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="GPSを使ったサーキットのラップタイム計測アプリ。スマホから無料で利用できる高機能GPSロガー">
-	<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
+	<meta name="description" content="高機能GPSロガーアプリの紹介。アプリのコンセプト、取扱説明書へのリンク">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/slide.css">
 	<script src="js/openclose.js"></script>
@@ -26,14 +25,43 @@
 	<div id="container">
 
 		<header>
-			<h1 id="logo"><a href="index2.html"><img src="images/logo.png" alt="CIRCUIT LAPTIME RECORDER"></a></h1>
-			<!--スライドショー-->
-			<aside id="mainimg">
-				<img src="images/0.png" alt="" class="slide0">
-				<img src="images/1.png" alt="" class="slide1">
-				<img src="images/0.png" alt="" class="slide2">
-			</aside>
+			<h1 id="logo"><a href="index2.html"><img src="images/logo.png" alt="CIRCUIT LAPTIME RECORDER"></a></h1>				
 		</header>
+
+		<!--スライドショー-->
+<aside id="mainimg">
+
+<div class="slide slide1">
+	<h2>自分を超えろっ！！</h2>
+</div>
+
+<div class="slide slide2">
+<div>
+<h1>最速を目指そう！</h1>
+<p>GPSによるサーキットのラップタイム計測アプリ<br>
+セクタータイムの計測や、走行履歴、ランキング表示など<br>
+多彩な機能であなたをサポート
+</p>
+</div>
+</div>
+
+<div class="slide slide3">
+<div>
+<h1>次世代の扉を切り開き<br>
+自分をこえろっ！！</h1>
+<p>無料で始められるGPSロガー<br>
+リアルタイムに処理された情報が<br>
+クールな画面と音声で伝えられる<br>
+ぜひ、新しい体験を！</p>
+</div>
+</div>
+
+			<a href="https://play.google.com/store/apps/details?id=あなたのパッケージ名" class="app-store" target="_blank" rel="noopener">
+				<img src="https://play.google.com/intl/en_us/badges/static/images/badges/ja_badge_web_generic.png"
+					alt="Google Play で手に入れよう"
+					style="height: 80px;">
+			</a>
+</aside>
 
 		<!--PC用（801px以上端末）メニュー-->
 		<nav id="menubar" class="nav-fix-pos">
@@ -217,7 +245,7 @@
 					<li class="title">OPTIONS</li>
 					<li><a href="options/index.html">オプションの説明</a></li>
 					<li><a href="options/membership.html">会員登録と解約</a></li>
-					<li><a href="options/inst-point.html">正確に計測するには</a></li>
+					<!--<li><a href="options/inst-point.html">正確に計測するには</a></li>-->
 				</ul>
 				<ul>
 					<li class="title">TERMS</li>
@@ -229,6 +257,16 @@
 					<li><a href="contact/index.html">問い合わせフォーム</a></li>
 					<li><a href="contact/about.html">当サイトについて</a></li>
 				</ul>
+				<ul>
+					<h4>Circuit Laptime Recoder</h4>
+					<h4>のダウンロードはこちらから</h4>
+					<a href="https://play.google.com/store/apps/details?id=あなたのパッケージ名" target="_blank" rel="noopener">
+					<img src="https://play.google.com/intl/en_us/badges/static/images/badges/ja_badge_web_generic.png"
+						alt="Google Play で手に入れよう"
+						style="height: 60px;">
+					</a>
+				</ul>
+
 			</div>
 			<!--/#footermenu-->
 			<div id="copyright">
@@ -261,6 +299,12 @@
 	<script>
 		open_close("menubar_hdr3", "menubar-s3");
 	</script>
+
+	<!--jQueryの読み込み-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!--このテンプレート専用のスクリプト-->
+	<script src="js/main.js"></script>
 
 </body>
 
